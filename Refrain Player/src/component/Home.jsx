@@ -3,6 +3,8 @@ import Nav from './Nav'
 import Hero from './Hero'
 import Song from './Song'
 import Artist from './Artist'
+import Playlist from './Playlist'
+import SongLine from './SongLine'
 
 const Home = () => {
   return (
@@ -29,6 +31,10 @@ const Home = () => {
     <Artist/>
 
     </div>
+    <div>
+      <Playlist/>
+    </div>
+    <SongLine/>
   </div>
 </div>
 
