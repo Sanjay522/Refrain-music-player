@@ -41,7 +41,7 @@ const navItems = [
 
 const Nav = () => {
   return (
-    <div className="w-[18%] bg-black text-white h-full p-6 space-y-6 flex justify-between">
+    <div className="w-[18%]  text-white h-full p-6 space-y-6 flex justify-between">
       <div>
       <h1 className="text-red-500 text-4xl font-bold">Refrain</h1>
 

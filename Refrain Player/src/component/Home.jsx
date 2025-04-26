@@ -1,6 +1,8 @@
 import React from 'react'
 import Nav from './Nav'
 import Hero from './Hero'
+import Song from './Song'
+import Artist from './Artist'
 
 const Home = () => {
   return (
@@ -9,6 +11,24 @@ const Home = () => {
 
   <div className="flex-grow">
     <Hero />
+    <div className='flex'>
+      <Song/>
+      <Song/>
+      <Song/>
+      <Song/>
+      <Song/>
+    </div>
+    <div className='flex'>
+    <Artist/>
+    <Artist/>
+
+    <Artist/>
+
+    <Artist/>
+
+    <Artist/>
+
+    </div>
   </div>
 </div>
 
