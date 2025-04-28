@@ -17,8 +17,8 @@ const Hero = () => {
             <p></p>we have it all for you!</p>
         </div>
         <div className="mt-10 space-x-5">
-            <button className="text-white bg-red-500  p-3 rounded-sm cursor-pointer">Dscover Now</button>
-            <button className="text-white bg-red-500  p-3 rounded-sm cursor-pointer">Create Playlist</button>
+            <button className="text-white bg-red-500  p-3 rounded-sm cursor-pointer hover:bg-red-700">Dscover Now</button>
+            <button className="text-white    bg-red-500  p-3 rounded-sm cursor-pointer hover:bg-red-700">Create Playlist</button>
         </div>
       </div>
     </div>
