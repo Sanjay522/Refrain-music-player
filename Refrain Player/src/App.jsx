@@ -7,14 +7,22 @@ import Nav from './component/Nav'
 import Nav2 from './component/Nav2'
 import Line from './component/Line'
 import Hero from './component/Hero'
+import Discove from './component/pages/Discover'
+import Discover from './component/pages/Discover'
+import AlbumPage from './component/pages/AlbumPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='w-[90vw] m-auto my-5'>
-        <Home/>
+      <div className='w-[90vw] m-auto my-5 flex'>
+        <Nav/>
+        <div className='flex-grow'>
+        {/* <Home/> */}
+        {/* <Discover/> */}
+        <AlbumPage/>
+        </div>
       </div>
     </>
   )

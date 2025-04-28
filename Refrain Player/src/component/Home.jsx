@@ -31,9 +31,8 @@ const Home = () => {
 
   return (
     <div className="flex">
-      <Nav />
 
-      <div className="flex-grow">
+      <div className="">
         <Hero />
         <div className=" flex flex-col my-10">
           <h1 className="text-3xl font-bold">Weekly Top songs</h1>
