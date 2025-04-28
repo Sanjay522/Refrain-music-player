@@ -6,9 +6,9 @@ import example from "../assets/example.png";
 const SongLine = () => {
   return (
     <div>
-      <div className="flex justify-between items-center py-5">
-        <p className="text-3xl">#1</p>
-        <div className="bg-[#1f1f1f] rounded-sm flex justify-between items-center pr-10 w-[95%]">
+      <div className="flex justify-between items-center px-5 py-1">
+        <p className="text-3xl">1</p>
+        <div className="bg-[#1f1f1f49] rounded-sm flex justify-between items-center pr-10 w-[95%]">
           <img src={example} alt="" className="h-15 rounded-sm" />
           <div>
             <h1 className="text-lg">Sorfcore</h1>
