@@ -20,12 +20,10 @@ function App() {
       <div className='w-[90vw] m-auto my-5 flex'>
         <Nav/>
         <div className='flex-grow'>
-          <div className='w-full'>
           <Home/>
-          </div>
-        {/* <Discover/> */}
-        {/* <AlbumPage/> */}
-        {/* <ArtistPage/> */}
+        <Discover/>
+        <AlbumPage/>
+        <ArtistPage/>
         </div>
       </div>
     </>
