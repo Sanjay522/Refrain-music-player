@@ -10,6 +10,7 @@ import Hero from './component/Hero'
 import Discove from './component/pages/Discover'
 import Discover from './component/pages/Discover'
 import AlbumPage from './component/pages/AlbumPage'
+import ArtistPage from './component/pages/ArtistPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,9 +20,12 @@ function App() {
       <div className='w-[90vw] m-auto my-5 flex'>
         <Nav/>
         <div className='flex-grow'>
-        {/* <Home/> */}
+          <div className='w-full'>
+          <Home/>
+          </div>
         {/* <Discover/> */}
-        <AlbumPage/>
+        {/* <AlbumPage/> */}
+        {/* <ArtistPage/> */}
         </div>
       </div>
     </>

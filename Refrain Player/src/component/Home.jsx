@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div className="flex">
 
-      <div className="">
+      <div className="w-full">
         <Hero />
         <div className=" flex flex-col my-10">
           <h1 className="text-3xl font-bold">Weekly Top songs</h1>

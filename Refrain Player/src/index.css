@@ -62,3 +62,10 @@ body{
   background-position: center;
   
 }
+
+.artist-bg{
+  background-image: url("assets/eminembg.png");
+  background-size: cover;
+  background-position: center;
+  
+}
