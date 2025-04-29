@@ -30,7 +30,7 @@ const Home = () => {
   // console.log(tracks)
 
   return (
-    <div className="flex">
+    <div className="flex  flex-col lg:flex-row sm:m-0 m-5">
 
       <div className="w-full">
         <Hero />

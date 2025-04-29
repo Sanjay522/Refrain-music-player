@@ -17,13 +17,13 @@ function App() {
 
   return (
     <>
-      <div className='w-[90vw] m-auto my-5 flex'>
+      <div className=' w-full sm:w-[90vw] m-auto my-5 flex'>
         <Nav/>
         <div className='flex-grow'>
           <Home/>
-        <Discover/>
-        <AlbumPage/>
-        <ArtistPage/>
+        {/* <Discover/> */}
+        {/* <AlbumPage/> */}
+        {/* <ArtistPage/> */}
         </div>
       </div>
     </>

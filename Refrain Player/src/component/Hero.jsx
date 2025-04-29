@@ -4,7 +4,7 @@ import Nav2 from "./Nav2";
 const Hero = () => {
   return (
     <div className=" ">
-      <div className="bg-img  h-[80svh] rounded-2xl p-5">
+      <div className="bg-img  sm:h-[80svh] rounded-2xl p-5">
         <Nav2 />
         <div className="text-5xl mt-30">
             <h1>ALL THE <span className="text-red">BEST SONGS</span></h1>
