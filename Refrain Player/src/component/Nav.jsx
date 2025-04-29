@@ -46,7 +46,6 @@ const navItems = [
 const Nav = () => {
   return (
     <>
-      {/* Sidebar - visible only on medium and above */}
       <div className="hidden sm:flex sm:w-[18%] text-white h-full p-6 justify-between relative">
         <div className="fixed">
           <h1 className="text-red-500 text-4xl font-bold">Refrain</h1>
@@ -75,7 +74,6 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* Bottom mobile nav - visible only on small screens */}
       <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 py-10 flex justify-around z-50">
         <div className="flex items-center flex-col">
           <img src={discover} alt="" className="h-6 w-6" />
