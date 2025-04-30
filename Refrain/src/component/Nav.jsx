@@ -74,7 +74,7 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 py-10 flex justify-around z-50">
+      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 py-10 flex justify-around z-50 ">
         <div className="flex items-center flex-col">
           <img src={discover} alt="" className="h-6 w-6" />
           <p className="text-sm mt-1">Home</p>

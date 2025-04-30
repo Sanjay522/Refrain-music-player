@@ -30,52 +30,128 @@ const Home = () => {
   // console.log(tracks)
 
   return (
-    <div className="flex  flex-col lg:flex-row sm:m-0 m-5">
-
+    <div className="flex  flex-col lg:flex-row sm:m-0 m-5 pr-1">
       <div className="w-full">
         <Hero />
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">Weekly Top songs</h1>
-          <div className="flex items-center">
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              Weekly Top songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
+          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
+            <Song />
+            <Song />
             <Song />
             <CircleButton />
           </div>
         </div>
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">New Release Songs</h1>
-          <div className="flex items-center">
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              New Release Songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
+          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
+            <Song />
+            <Song />
             <Song />
             <CircleButton />
           </div>
         </div>
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">Trending Songs</h1>
+
+
+
+
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              Trending Songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
           <div className="">
-            <SongLine />
+          <SongLine/>
+          <SongLine/>
+          <SongLine/>
           </div>
         </div>
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">Popular Artist</h1>
-          <div className="flex items-center">
-          <Artist />
+
+
+
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              New Release Songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
+          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
+          <Artist/>
+          <Artist/>
+          <Artist/>
           <CircleButton />
           </div>
         </div>
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">Top Albums</h1>
-          <div className="flex items-center">
-          <Album />
+
+
+
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              New Release Songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
+          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
+          <Album/>
+          <Album/>
+          <Album/>
+
           <CircleButton />
           </div>
         </div>
-        <div className=" flex flex-col my-10">
-          <h1 className="text-3xl font-bold">Mood Playlist</h1>
-          <div className="flex items-center">
-          <Playlist />
+
+
+
+        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
+          <div className="flex items-center justify-between">
+            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
+              New Release Songs
+            </h1>
+            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
+              View all
+            </p>
+          </div>
+          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
+        <Playlist/>
+        <Playlist/>
+
+        <Playlist/>
+
           <CircleButton />
           </div>
         </div>
-        <Footer/>
+
+
+
+
+        <Footer />
+        <Playlist/>
+
+        <Playlist/>
 
       </div>
     </div>
