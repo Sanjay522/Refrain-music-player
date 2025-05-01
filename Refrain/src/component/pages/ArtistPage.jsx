@@ -7,18 +7,20 @@ import CircleButton from "../button/CircleButton";
 import Song from "../Song";
 import Playlist from "../Playlist";
 import Artist from "../Artist";
+import SectionHeader from '../SectionHeader'
 
-const ArtistPage = () => {
+
+const ArtistPage = ({title}) => {
   return (
-    <div>
+    <div className="flex-col lg:flex-row sm:m-0 m-5 pr-1">
       <div className="bg-black rounded-md ">
-        <div class="artist-bg bg-cover bg-center w-full rounded-md h-[50vh] flex flex-col justify-between">
-          <Nav3 />
-          <h1 className="text-8xl font-semibold px-10 py-15 ">Eminem</h1>
+        <div className=" relative artist-bg bg-cover bg-center w-full rounded-md h-[30vh] sm:h-[50vh] sm:flex sm:flex-col sm:justify-between">
+          {/* <Nav3 /> */}
+          <h1 className="absolute bottom-3 left-5 text-6xl sm:text-8xl font-semibold sm:px-10 sm:py-15 ">Eminem</h1>
         </div>
         <div className="px-3">
           <div className="">
-            <h1 className="text-4xl font-semibold p-5">Popular</h1>
+            <h1 className="py-4 text-4xl font-semibold sm:p-5">Popular</h1>
             <SongLine />
             <SongLine />
 
@@ -26,40 +28,63 @@ const ArtistPage = () => {
             <SongLine />
             <SongLine />
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center p-2">
             <button className="text-white bg-red-500 p-2 rounded-md hover:bg-red-800">
               Show more
             </button>
           </div>
 
-          <div>
-            <h1 className="text-2xl font-semibold">Artist's Albums</h1>
-            <div className="flex items-center">
-              <Album />
-              <CircleButton />
-            </div>
-          </div>
-          <div>
-            <h1 className="text-2xl font-semibold">Single Songs</h1>
-            <div className="flex items-center">
-                <Song/>
-              <CircleButton />
-            </div>
-          </div>
-          <div>
-            <h1 className="text-2xl font-semibold">Artist's Playlist</h1>
-            <div className="flex items-center">
-              <Playlist/>
-              <CircleButton />
-            </div>
-          </div>
-          <div>
-            <h1 className="text-2xl font-semibold">Eminem Fans Also Listen To</h1>
-            <div className="flex items-center">
-              <Artist/>
-              <CircleButton />
-            </div>
-          </div>
+
+
+
+          <SectionHeader title="Artist Albums">
+        <Album/>
+        <Album/>
+        <Album/>
+        <CircleButton/>
+        </SectionHeader>
+
+         
+
+
+
+
+
+
+          <SectionHeader title="Single Songs">
+        <Song/>
+        <Song/>
+        <Song/>
+        <CircleButton/>
+        </SectionHeader>
+
+
+
+          
+
+
+
+
+          <SectionHeader title="Artist Playlist">
+        <Playlist/>
+        <Playlist/>
+        <Playlist/>
+        <CircleButton/>
+        </SectionHeader>
+
+
+
+          
+
+
+
+          <SectionHeader title="Eminem">
+        <Artist/>
+        <Artist/>
+        <Artist/>
+        <CircleButton/>
+        </SectionHeader>
+
 
         </div>
       </div>

@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Album from "./Album";
 import CircleButton from "./button/CircleButton";
 import Footer from "./Footer";
+import SectionHeader from "./SectionHeader";
 
 const Home = () => {
   const [tracks, setTracks] = useState([]);
@@ -33,125 +34,52 @@ const Home = () => {
     <div className="flex  flex-col lg:flex-row sm:m-0 m-5 pr-1">
       <div className="w-full">
         <Hero />
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              Weekly Top songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
-            <Song />
-            <Song />
-            <Song />
-            <CircleButton />
-          </div>
-        </div>
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              New Release Songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
-            <Song />
-            <Song />
-            <Song />
-            <CircleButton />
-          </div>
-        </div>
 
 
+        <SectionHeader title="Weekly Top Songs">
+  <Song />
+  <Song />
+  <Song />
+  <CircleButton />
+</SectionHeader>
 
+<SectionHeader title="New Release Songs">
+  <Song />
+  <Song />
+  <Song />
+  <CircleButton />
+</SectionHeader>
 
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              Trending Songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className="">
-          <SongLine/>
-          <SongLine/>
-          <SongLine/>
-          </div>
-        </div>
+<SectionHeader title="Trending Songs">
+  <div className="w-full">
+    <SongLine />
+    <SongLine />
+    <SongLine />
+  </div>
+</SectionHeader>
 
+<SectionHeader title="Top Artists">
+  <Artist />
+  <Artist />
+  <Artist />
+  <CircleButton />
+</SectionHeader>
 
+<SectionHeader title="Top Albums">
+  <Album />
+  <Album />
+  <Album />
+  <CircleButton />
+</SectionHeader>
 
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              New Release Songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
-          <Artist/>
-          <Artist/>
-          <Artist/>
-          <CircleButton />
-          </div>
-        </div>
-
-
-
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              New Release Songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
-          <Album/>
-          <Album/>
-          <Album/>
-
-          <CircleButton />
-          </div>
-        </div>
-
-
-
-        <div className=" sm:flex sm:flex-col sm:my-10 my-5">
-          <div className="flex items-center justify-between">
-            <h1 className=" text-[26px] font-bold sm:text-3xl sm:font-bold">
-              New Release Songs
-            </h1>
-            <p className="text-red-500 hover:underline text-[20px] sm:hidden">
-              View all
-            </p>
-          </div>
-          <div className=" flex justify-evenly sm:justify-start sm:flex sm:items-center">
-        <Playlist/>
-        <Playlist/>
-
-        <Playlist/>
-
-          <CircleButton />
-          </div>
-        </div>
-
-
-
+<SectionHeader title="Top Playlists">
+  <Playlist />
+  <Playlist />
+  <Playlist />
+  <CircleButton />
+</SectionHeader>
 
         <Footer />
-        <Playlist/>
-
-        <Playlist/>
 
       </div>
     </div>

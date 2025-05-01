@@ -20,9 +20,9 @@ function App() {
       <div className=' w-full sm:w-[90vw] m-auto sm:my-5 flex'>
         <Nav/>
         <div className='flex-grow'>
-          {/* <Home/> */}
-        <Discover/>
-        <AlbumPage/>
+          <Home/>
+        {/* <Discover/> */}
+        {/* <AlbumPage/> */}
         <ArtistPage/>
         </div>
       </div>

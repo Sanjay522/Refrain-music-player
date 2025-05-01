@@ -6,46 +6,51 @@ import Playlist from '../Playlist'
 import Artist from '../Artist'
 import Song from '../Song'
 import Album from '../Album'
+import SectionHeader from '../SectionHeader'
 
 const Discover = () => {
   return (
-    <div>
+    <div className="flex  flex-col lg:flex-row sm:m-0 m-5 pr-1">
+      <div className='w-full'>
       <Nav2/>
-      <div className='my-2 '>
-        <h1 className='text-3xl font-bold my-3'>Music Genres</h1>
-        <div className='flex items-center '>
-      <Genres/>
-      <CircleButton/>
-      </div>
-      </div>
-      <div className='my-2'>
-        <h1 className='text-3xl font-bold my-3'>Mood Playlist</h1>
-        <div className='flex items-center'>
+
+
+      <SectionHeader title="Music Genre">
+        <Genres/>
+        <Genres/>
+        <Genres/>
+        <CircleButton/>
+        </SectionHeader>
+
+
+
+
+
+        <SectionHeader title="Mood Playlist">
+        <Playlist/>
+        <Playlist/>
         <Playlist/>
         <CircleButton/>
-        </div>
-      </div>
-      <div className='my-2'>
-        <h1 className='text-3xl font-bold my-3'>Popular Artist</h1>
-        <div className='flex items-center'>
-        <Artist/>
-        <CircleButton/>
-        </div>
-      </div>
-      <div className='my-2'>
-        <h1 className='text-3xl font-bold my-3'>New Release Songs</h1>
-        <div className='flex items-center'>
+        </SectionHeader>
+
+
+
+        <SectionHeader title="New Release Songs">
+        <Song/>
+        <Song/>
         <Song/>
         <CircleButton/>
-        </div>
-      </div>
-      <div className='my-2'>
-        <h1 className='text-3xl font-bold my-3'>Top Album</h1>
-        <div className='flex items-center'>
-        <Album/>
+        </SectionHeader>
+
+        <SectionHeader title="Popular Artist">
+        <Artist/>
+        <Artist/>
+        <Artist/>
         <CircleButton/>
+        </SectionHeader>
+
+
         </div>
-      </div>
     </div>
   )
 }
