@@ -79,7 +79,6 @@ const Home = () => {
   <CircleButton />
 </SectionHeader>
 
-        <Footer />
 
       </div>
     </div>

@@ -11,6 +11,7 @@ import Discove from './component/pages/Discover'
 import Discover from './component/pages/Discover'
 import AlbumPage from './component/pages/AlbumPage'
 import ArtistPage from './component/pages/ArtistPage'
+import Footer from './component/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,10 +22,13 @@ function App() {
         <Nav/>
         <div className='flex-grow'>
           <Home/>
-        {/* <Discover/> */}
-        {/* <AlbumPage/> */}
+        <Discover/>
+        <AlbumPage/>
         <ArtistPage/>
+        <Footer/>
+
         </div>
+
       </div>
     </>
   )
