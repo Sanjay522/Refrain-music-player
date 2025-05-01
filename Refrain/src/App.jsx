@@ -12,6 +12,7 @@ import Discover from './component/pages/Discover'
 import AlbumPage from './component/pages/AlbumPage'
 import ArtistPage from './component/pages/ArtistPage'
 import Footer from './component/Footer'
+import Player from './component/Player'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,9 +27,11 @@ function App() {
         <AlbumPage/>
         <ArtistPage/>
         <Footer/>
-
         </div>
+        <div className="fixed sm:bottom-0 left-0 bottom-22 w-full bg-black z-50">
+        <Player/>
 
+</div>
       </div>
     </>
   )

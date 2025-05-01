@@ -10,6 +10,8 @@ import yourplaylist from "../assets/yourplaylist.svg";
 import addplaylist from "../assets/addplaylist.svg";
 import setting from "../assets/setting.svg";
 import  logout from "../assets/logout.svg";
+import  library from "../assets/library.svg";
+
 
 import Line from "./Line";
 
@@ -85,21 +87,21 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 py-7 flex justify-around z-50 ">
+      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-black text-white p-5 flex justify-around z-50 h-22 ">
         <div className="flex items-center flex-col">
-          <img src={home1} alt="" className="h-8 w-8" />
+          <img src={home1} alt="" className="h-7 w-7" />
           <p className="text-lg mt-1">Home</p>
         </div>
         <div className="flex items-center flex-col">
-          <img src={discover} alt="" className="h-8 w-8" />
+          <img src={discover} alt="" className="h-7 w-7" />
           <p className="text-lg mt-1">Discover</p>
         </div>
         <div className="flex items-center flex-col">
-          <img src={album} alt="" className="h-8 w-8" />
+          <img src={album} alt="" className="h-7 w-7" />
           <p className="text-lg mt-1">Album</p>
         </div>
         <div className="flex items-center flex-col">
-          <img src={discover} alt="" className="h-8 w-8" />
+          <img src={library} alt="" className="h-7 w-7" />
           <p className="text-lg mt-1">Library</p>
         </div>
       </div>
