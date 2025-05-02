@@ -59,12 +59,12 @@ const navItems = [
 const Nav = () => {
   return (
     <>
-      <div className="hidden sm:flex sm:w-[18%] text-white h-full p-6 justify-between relative">
-        <div className="fixed">
-          <h1 className="text-red-500 text-4xl font-bold">Refrain</h1>
-
+      <div className="hidden  sm:flex sm:w-[18%] text-white h-full p-6 justify-between relative ">
+        <div className="fixed ">
+          {/* <h1 className="text-red-500 text-4xl font-bold">Refrain</h1> */}
+<div className="">
           {navItems.map((section, index) => (
-            <div key={index} className="my-2">
+            <div key={index} className="my-2 ">
               <p className="text-xs uppercase mb-2 text-red-500">
                 {section.title}
               </p>
@@ -83,6 +83,7 @@ const Nav = () => {
               </div>
             </div>
           ))}
+          </div>
           <Line />
         </div>
       </div>

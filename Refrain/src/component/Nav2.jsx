@@ -9,12 +9,14 @@ const Nav2 = () => {
   return (
     <>
       {/* Desktop Nav */}
-      <div className="hidden sm:flex items-center justify-between px-4 py-2 bg-transparent text-white fixed w-[74vw] z-50">
-        <div>
+      <div className="hidden sm:flex items-center justify-between px-4 py-2 bg-transparent text-white fixed w-full z-50">
+        <div className="flex items-center space-x-10">
+        <h1 className="text-4xl font-semibold text-red-500">Refrain</h1>
+
           <input
             type="text"
             placeholder="Search For Music, Artist, ..."
-            className="p-2 rounded bg-gray-900 text-white w-[20vw]"
+            className="p-2  bg-gray-900 text-white w-[20vw] rounded-full"
           />
         </div>
 

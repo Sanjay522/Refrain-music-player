@@ -11,7 +11,7 @@ import SectionHeader from "../SectionHeader";
 
 const ArtistPage = ({ title }) => {
   return (
-    <div className="flex-col lg:flex-row sm:m-0 m-5 pr-1">
+    <div className="flex-col lg:flex-row sm:m-0 m-5 pr-1 sm:px-10">
       <div className="rounded-md">
         <div className="bg-black rounded-b-md">
           <div className="ml-1 relative artist-bg bg-cover bg-center w-full rounded-md h-[30vh] sm:h-[50vh] sm:flex sm:flex-col sm:justify-between">

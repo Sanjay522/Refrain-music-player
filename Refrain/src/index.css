@@ -15,7 +15,7 @@
 }
 
 body{
-  background-color: #181818;
+  background-color: #0c0c0c;
   color: white;
 }
 
@@ -68,4 +68,12 @@ body{
   background-size: cover;
   background-position: center;
   
+}
+
+.bg-test{
+
+  
+  background-image: url(assets/example.png);
+  background-size: cover;
+  background-position: center;
 }
